@@ -11,7 +11,7 @@ import SwiftUI
 struct TrivialnoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
