@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		262EDDC82DE71AE9000EFA24 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 262EDDC72DE71AE9000EFA24 /* FirebaseAuth */; };
+		262EDDCA2DE71AE9000EFA24 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 262EDDC92DE71AE9000EFA24 /* FirebaseDatabase */; };
+		262EDDCC2DE71AE9000EFA24 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 262EDDCB2DE71AE9000EFA24 /* FirebaseFirestore */; };
+		2662666E2DF0F36100D271CE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2662666D2DF0F36100D271CE /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		263CD1CB2DE43D920034A7E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +36,30 @@
 		263CD1D42DE43D920034A7E9 /* TrivialnoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrivialnoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		262EDDC42DE7187C000EFA24 /* Exceptions for "Trivialno" folder in "TrivialnoTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 263CD1C92DE43D920034A7E9 /* TrivialnoTests */;
+		};
+		262EDDC52DE7187C000EFA24 /* Exceptions for "Trivialno" folder in "TrivialnoUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 263CD1D32DE43D920034A7E9 /* TrivialnoUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		263CD1BC2DE43D900034A7E9 /* Trivialno */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				262EDDC42DE7187C000EFA24 /* Exceptions for "Trivialno" folder in "TrivialnoTests" target */,
+				262EDDC52DE7187C000EFA24 /* Exceptions for "Trivialno" folder in "TrivialnoUITests" target */,
+			);
 			path = Trivialno;
 			sourceTree = "<group>";
 		};
@@ -52,6 +80,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262EDDCA2DE71AE9000EFA24 /* FirebaseDatabase in Frameworks */,
+				2662666E2DF0F36100D271CE /* FirebaseStorage in Frameworks */,
+				262EDDC82DE71AE9000EFA24 /* FirebaseAuth in Frameworks */,
+				262EDDCC2DE71AE9000EFA24 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +144,10 @@
 			);
 			name = Trivialno;
 			packageProductDependencies = (
+				262EDDC72DE71AE9000EFA24 /* FirebaseAuth */,
+				262EDDC92DE71AE9000EFA24 /* FirebaseDatabase */,
+				262EDDCB2DE71AE9000EFA24 /* FirebaseFirestore */,
+				2662666D2DF0F36100D271CE /* FirebaseStorage */,
 			);
 			productName = Trivialno;
 			productReference = 263CD1BA2DE43D900034A7E9 /* Trivialno.app */;
@@ -192,9 +228,14 @@
 			knownRegions = (
 				en,
 				Base,
+				hr,
+				de,
 			);
 			mainGroup = 263CD1B12DE43D900034A7E9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				262EDDC62DE71AE9000EFA24 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 263CD1BB2DE43D900034A7E9 /* Products */;
 			projectDirPath = "";
@@ -554,6 +595,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		262EDDC62DE71AE9000EFA24 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		262EDDC72DE71AE9000EFA24 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 262EDDC62DE71AE9000EFA24 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		262EDDC92DE71AE9000EFA24 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 262EDDC62DE71AE9000EFA24 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		262EDDCB2DE71AE9000EFA24 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 262EDDC62DE71AE9000EFA24 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2662666D2DF0F36100D271CE /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 262EDDC62DE71AE9000EFA24 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 263CD1B22DE43D900034A7E9 /* Project object */;
 }

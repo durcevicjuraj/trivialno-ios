@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct ContentView: View {
+    
+    @EnvironmentObject var userManager: UserManager
+    
     var body: some View {
         NavigationStack{
             VStack (spacing: 15){
@@ -16,15 +20,10 @@ struct ContentView: View {
                     .foregroundStyle(.tint)
                     .frame(width: 200, height: 200)
                 
-                Text("Did you know?")
-                    .fontWeight(.bold)
-                Text("Octopuses have three hearts.")
-                
-                
                 Spacer()
                 
                 NavigationLink(destination: PlayView()) {
-                    Text("Play")
+                    Text("play")
                         .frame(width: 200, height: 35)
                         .background(Color.blue)
                         .foregroundColor(.white)
@@ -32,7 +31,7 @@ struct ContentView: View {
                 }
                 
                 NavigationLink(destination: DailyView()) {
-                    Text("Daily Question")
+                    Text("dailyQuestion")
                         .frame(width: 200, height: 35)
                         .background(Color.blue)
                         .foregroundColor(.white)
@@ -40,7 +39,7 @@ struct ContentView: View {
                 }
                 
                 NavigationLink(destination: ProfileView()) {
-                    Text("Profile")
+                    Text("profile")
                         .frame(width: 200, height: 35)
                         .background(Color.blue)
                         .foregroundColor(.white)
@@ -48,7 +47,7 @@ struct ContentView: View {
                 }
                 
                 NavigationLink(destination: LeaderboardsView()) {
-                    Text("Leaderboards")
+                    Text("leaderboards")
                         .frame(width: 200, height: 35)
                         .background(Color.blue)
                         .foregroundColor(.white)
@@ -56,7 +55,7 @@ struct ContentView: View {
                 }
                 
                 NavigationLink(destination: SettingsView()) {
-                    Text("Settings")
+                    Text("settings")
                         .frame(width: 200, height: 35)
                         .background(Color.blue)
                         .foregroundColor(.white)
@@ -74,4 +73,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(UserManager())
 }

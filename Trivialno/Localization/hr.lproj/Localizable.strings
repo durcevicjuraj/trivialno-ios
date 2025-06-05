@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  Trivialno
+
+  Created by Juraj Đurčević on 28.05.2025..
+  
+*/
+
+//ContentView
+"play" = "Igraj";
+"dailyQuestion" = "Dnevno pitanje";
+"profile" = "Profil";
+"leaderboards" = "Ljestvice najboljih";
+"settings" = "Postavke";
+"welcome" = "Dobrodošli, %@";
+
+//Settings
+"accessibility" = "Pristupačnost";
+"admin" = "Administrator";
+"profileSettings" = "Postavke profila";
+"logout" = "Odjava";
+
+//LogInRegister
+"usernameAuth" = "Korisničko ime";
+"emailAuth" = "E-Pošta";
+"passwordAuth" = "Lozinka";
+"confirmPasswordAuth" = "Potvrdi Lozinku";
+"login" = "Prijavi se";
+"register" = "Registriraj se";
+"noAccount" = "Nemate račun?";
+
+//User Rank
+
+Bronze = "Brončani";
+Silver = "Srebrni";
+Gold = "Zlatni";
+Platinum = "Platinasti";
+Diamond = "Dijamantni";
+Master = "Majstor";
+Grandmaster = "Velemajstor";

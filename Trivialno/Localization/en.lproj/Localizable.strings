@@ -1,0 +1,59 @@
+/* 
+  Localizable.strings
+  Trivialno
+
+  Created by Juraj Đurčević on 28.05.2025..
+  
+*/
+
+//ContentView
+
+"play" = "Play";
+"dailyQuestion" = "Daily Question";
+"profile" = "Profile";
+"leaderboards" = "Leaderboards";
+"settings" = "Settings";
+"welcome" = "Welcome, %@";
+
+//Settings
+
+"accessibility" = "Accessibility";
+"admin" = "Admin";
+"profileSettings" = "Profile Settings";
+"logout" = "Log Out";
+
+//LogInRegister
+
+"usernameAuth" = "Username";
+"emailAuth" = "E-Mail";
+"passwordAuth" = "Password";
+"confirmPasswordAuth" = "Confirm Password";
+"login" = "Log In";
+"register" = "Register";
+"noAccount" = "Don't have an account?";
+
+//User Ranks
+
+Bronze = "Bronze";
+Silver = "Silver";
+Gold = "Gold";
+Platinum = "Platinum";
+Diamond = "Diamond";
+Master = "Master";
+Grandmaster = "Grandmaster";
+
+//Errors
+
+fieldsEmptyError = "Please fill in all fields.";
+invalidEmailError = "Invalid email format.";
+weakPasswordError = "Password is too weak.";
+passwordMismatchError= "Passwords do not match.";
+invalidCredentialsError = "Email or password is incorrect.";
+unknownLoginError = "Unknown login error.";
+
+//General
+
+select = "Select";
+
+
+

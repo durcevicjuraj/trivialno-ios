@@ -1,6 +1,10 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    @EnvironmentObject var authManager: AuthManager
+
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 16) {
@@ -8,7 +12,7 @@ struct SettingsView: View {
 
                 // Accessibility
                 NavigationLink(destination: ContentView()) {
-                    Text("Accessibility")
+                    Text("accessibility")
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
@@ -19,7 +23,7 @@ struct SettingsView: View {
 
                 // Admin
                 NavigationLink(destination: ContentView()){
-                    Text("Admin")
+                    Text("admin")
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
@@ -30,7 +34,7 @@ struct SettingsView: View {
 
                 // Profile Settings
                 NavigationLink(destination: ContentView()) {
-                    Text("Profile Settings")
+                    Text("profileSettings")
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
@@ -42,9 +46,10 @@ struct SettingsView: View {
                 // Log out (optional: trigger logic instead of navigation)
                 Button(action: {
                     // Your logout logic here
+                    authManager.logout()
                     print("User logged out")
                 }) {
-                    Text("Log out")
+                    Text("logout")
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()

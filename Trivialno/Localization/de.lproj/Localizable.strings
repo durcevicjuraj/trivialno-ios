@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  Trivialno
+
+  Created by Juraj Đurčević on 28.05.2025..
+  
+*/
+
+//ContentView
+"play" = "Spielen";
+"dailyQuestion" = "Tägliche Frage";
+"profile" = "Profil";
+"leaderboards" = "Bestenlisten";
+"settings" = "Einstellungen";
+"welcome" = "Willkommen, %@";
+
+//Settings
+"accessibility" = "Barrierefreiheit";
+"admin" = "Administrator";
+"profileSettings" = "Profileinstellungen";
+"logout" = "Abmelden";
+
+//LoginRegister
+"usernameAuth" = "Benutzername";
+"emailAuth" = "E-Mail";
+"passwordAuth" = "Passwort";
+"confirmPasswordAuth" = "Passwort bestätigen";
+"login" = "Anmelden";
+"register" = "Registrieren";
+"noAccount" = "Sie haben noch kein Konto?";
+
+//User Ranks
+
+Bronze = "Bronze";
+Silver = "Silber";
+Gold = "Gold";
+Platinum = "Platin";
+Diamond = "Diamant";
+Master = "Meister";
+Grandmaster = "Großmeister";
+
