@@ -30,5 +30,5 @@ Trivialno is a student-built trivia quiz app developed at FERIT. It offers a fun
 
 ## Author
 
-Developed as a student project at **FERIT** by **Juraj Đurčević**.
+JĐ @ FERIT
 
