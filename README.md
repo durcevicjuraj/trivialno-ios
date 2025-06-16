@@ -14,7 +14,7 @@ Trivialno is a student-built trivia quiz app developed at FERIT. It offers a fun
 - **Firebase Firestore & Storage**: Real-time database and cloud storage for profile images and quiz content.
 - **Localization support**: English and Croatian.
 - **Shake Sensor**: Shuffle question answers by shaking.
-- **Light/Dark Mode**: App adapats to the users system settings.
+- **Light/Dark Mode**: App adapts to the users system settings.
 - **MVVM Architecture**
 
 
