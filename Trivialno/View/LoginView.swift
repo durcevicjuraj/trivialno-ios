@@ -20,11 +20,12 @@ struct LoginView: View {
     var body: some View {
         NavigationStack{
             VStack(spacing: 40) {
+                Spacer()
                 
-                Image("trivialno-icon")
+                Image("trivialno-logo-text")
                     .resizable()
                     .foregroundStyle(.tint)
-                    .frame(width: 200, height: 200)
+                    .frame(width: 200, height: 250)
                 
                 // Email and password fields
                 VStack(alignment: .leading, spacing: 24) {
@@ -49,19 +50,19 @@ struct LoginView: View {
                 .padding(.horizontal, 40)
                 
                 // Log in button
-                Button("Login") {
+                Button("login") {
                     if(email.isEmpty || password.isEmpty){
                         errorMessage = NSLocalizedString("fieldsEmptyError", comment: "")
                         print("Invalid login.")
                     }
                     else{
                         authManager.login(email: email, password: password) { success in
-                            if !success {
-                                errorMessage = authManager.authError ?? NSLocalizedString("unknownLoginError", comment: "")
-                                print("Firebase login failed.")
+                            if success {
+                                userManager.fetchCurrentUser()
                             }
                             else{
-                                userManager.fetchCurrentUser()
+                                errorMessage = authManager.authError ?? NSLocalizedString("unknownLoginError", comment: "")
+                                print("Firebase login failed.")
                             }
                         }
                     }

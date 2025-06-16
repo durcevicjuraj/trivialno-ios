@@ -6,35 +6,155 @@
   
 */
 
+//Notification
+
+newRankTitle = "Novi rang!";
+newRankBody = "Dostigli ste rang %@!";
+
 //ContentView
-"play" = "Igraj";
-"dailyQuestion" = "Dnevno pitanje";
-"profile" = "Profil";
-"leaderboards" = "Ljestvice najboljih";
-"settings" = "Postavke";
-"welcome" = "Dobrodošli, %@";
+
+play = "Igraj";
+dailyQuestion = "Dnevno pitanje";
+profile = "Profil";
+leaderboards = "Ljestvica najboljih";
+settings = "Postavke";
+welcome = "Dobrodošao, %@";
+didYouKnow = "Jeste li znali?";
 
 //Settings
-"accessibility" = "Pristupačnost";
-"admin" = "Administrator";
-"profileSettings" = "Postavke profila";
-"logout" = "Odjava";
+
+accessibility = "Pristupačnost";
+admin = "Administrator";
+adminPanel = "Administratorska ploča";
+profileSettings = "Postavke profila";
+logout = "Odjavi se";
+
+//Admin
+
+addQuestion = "Dodaj pitanje";
+browseQuestions = "Pregledaj pitanja";
+browseUsers = "Pregledaj Korisnike";
+addDailyFact = "Dodaj dnevnu činjenicu";
+
+searchAndFilter = "Pretraži & Filtriraj";
+searchQuestionEN = "Pretraži pitanje (EN)";
+category = "Kategorija";
+type = "Tip";
+difficulty = "Težina";
+questions = "Pitanja";
+
+editQuestion = "Uredi Pitanje";
+
+searchUsername = "Pretraži korisničko ime";
+filters = "Filteri";
+rank = "Rang";
+maxElo = "Maks ELO";
+users = "Korisnici";
+
+editUser = "Uredi Korisnika";
+basicInfo = "Osnovni Info";
+gameInfo = "Igra Info";
+
+addFact = "Dodaj činjenicu";
 
 //LogInRegister
-"usernameAuth" = "Korisničko ime";
-"emailAuth" = "E-Pošta";
-"passwordAuth" = "Lozinka";
-"confirmPasswordAuth" = "Potvrdi Lozinku";
-"login" = "Prijavi se";
-"register" = "Registriraj se";
-"noAccount" = "Nemate račun?";
 
-//User Rank
+usernameAuth = "Korisničko ime";
+emailAuth = "E-pošta";
+passwordAuth = "Lozinka";
+confirmPasswordAuth = "Potvrdi Lozinku";
+login = "Prijavi se";
+register = "Registriraj se";
+noAccount = "Nemate račun?";
+country = "Država";
+dateOfBirth = "Datum rođenja";
+
+
+//Profile
+
+bestScores = "Najbolji rezultati";
+
+//Profile Settings
+
+profileImage = "Profilna slika";
+profileSettings = "Postavke Profila";
+
+//Change Image Sheet
+
+chooseFromLibrary = "Odaberite iz biblioteke";
+uploadNewImageQuestion = "Prenijeti novu profilnu sliku?";
+
+//Play
+
+question = "Pitanje";
+timeLeft = "Preostalo vremena";
+points = "Bodovi";
+
+//Result
+
+gameOver = "Kraj!";
+secondsLeft = "sekundi preostalo";
+powerUpsUsed = "Iskorištena pojačanja";
+playAgain = "Igraj Opet";
+
+//Leaderboards
+
+bestScore = "Najbolja igra";
+
+//User Ranks
 
 Bronze = "Brončani";
 Silver = "Srebrni";
 Gold = "Zlatni";
 Platinum = "Platinasti";
 Diamond = "Dijamantni";
-Master = "Majstor";
-Grandmaster = "Velemajstor";
+Quizmaster = "Kviz majstor";
+
+//Errors
+
+fieldsEmptyError = "Molimo ispunite sva polja.";
+invalidEmailError = "Nevažeći format e-pošte.";
+weakPasswordError = "Lozinka je preslaba.";
+passwordMismatchError= "Lozinke se ne podudaraju.";
+invalidCredentialsError = "E-pošta ili lozinka nisu točni.";
+unknownLoginError = "Nepoznata greška pri prijavi.";
+
+//General
+
+select = "Izaberi";
+cancel = "Otkaži";
+saveChanges = "Spremi promjene";
+all = "Sve";
+
+//Question
+
+easy = "Lagano";
+medium = "Srednji";
+hard = "Teško";
+
+general = "Opće znanje";
+geography = "Geografija";
+science = "Znanost";
+history = "Povijest";
+popCulture = "Pop Kultura";
+sports = "Sport";
+art = "Umjetnost";
+literature = "Literatura";
+music = "Muzika";
+cooking = "Kuhanje";
+film = "Film";
+videoGames = "Video Igre";
+animals = "Životinje";
+technology = "Tehnologija";
+biology = "Biologija";
+medicine = "Medicina";
+chemistry = "Kemija";
+physics = "Fizika";
+religion = "Religija";
+
+multipleChoice = "Višestruki izbor";
+
+
+
+
+

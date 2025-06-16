@@ -49,6 +49,18 @@ class ProfileViewModel: ObservableObject {
             }
         }
     }
+    
+    func usedJokers(from score: ScoreEntry) -> Int {
+        [score.used5050, score.usedSkip, score.usedDP].filter { $0 }.count
+    }
+
+    func formatDate(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .none
+        return formatter.string(from: date)
+    }
+
 
 
 }

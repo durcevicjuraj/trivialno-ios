@@ -7,10 +7,13 @@
 
 import Foundation
 
-struct ScoreEntry: Codable {
+struct ScoreEntry: Codable, Identifiable {
+    var id: String = UUID().uuidString
     var score: Int
     var date: Date
-    var jokersUsed: Int
+    var used5050: Bool
+    var usedSkip: Bool
+    var usedDP: Bool
     var questionsAnswered: Int
 }
 

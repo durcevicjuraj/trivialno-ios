@@ -62,14 +62,11 @@ struct RegisterView: View {
                     }
 
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("Date of Birth")
-                        Button(formattedDate) {
-                            showDatePicker = true
-                        }
+                        DatePicker("dateOfBirth", selection: $dateOfBirth, in: ...Date(),displayedComponents: .date)
                     }
 
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("Country")
+                        Text("country")
                         Button(Locale.current.localizedString(forRegionCode: selectedCountry) ?? selectedCountry) {
                             showCountryPicker = true
                         }
@@ -102,6 +99,7 @@ struct RegisterView: View {
                             userManager: userManager
                         ) { success in
                             if success {
+                                userManager.fetchCurrentUser()
                                 print("✅ Registered and saved to Firestore")
                                 // Navigate or show success screen
                             } else {

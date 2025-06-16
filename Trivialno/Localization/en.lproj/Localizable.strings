@@ -6,31 +6,94 @@
   
 */
 
+// Notification
+
+newRankTitle = "New rank!";
+newRankBody = "You've reached the rank of %@!";
+
 //ContentView
 
-"play" = "Play";
-"dailyQuestion" = "Daily Question";
-"profile" = "Profile";
-"leaderboards" = "Leaderboards";
-"settings" = "Settings";
-"welcome" = "Welcome, %@";
+play = "Play";
+dailyQuestion = "Daily Question";
+profile = "Profile";
+leaderboards = "Leaderboards";
+settings = "Settings";
+welcome = "Welcome, %@";
+didYouKnow = "Did you know?";
 
 //Settings
 
-"accessibility" = "Accessibility";
-"admin" = "Admin";
-"profileSettings" = "Profile Settings";
-"logout" = "Log Out";
+accessibility = "Accessibility";
+admin = "Admin";
+adminPanel = "Admin Panel";
+profileSettings = "Profile Settings";
+logout = "Log Out";
+
+//Admin
+
+addQuestion = "Add question";
+browseQuestions = "Browse Questions";
+browseUsers = "Browse Users";
+addDailyFact = "Add Daily Fact";
+
+searchAndFilter = "Search & Filter";
+searchQuestionEN = "Search questions (EN)";
+category = "Category";
+type = "Type";
+difficulty = "Difficulty";
+questions = "Questions";
+
+editQuestion = "Edit Question";
+
+searchUsername = "Search Username";
+filters = "Filters";
+rank = "Rank";
+maxElo = "Max ELO";
+users = "Users";
+
+editUser = "Edit User";
+basicInfo = "Basic info";
+gameInfo = "Game info";
+
+addFact = "Add Fact";
 
 //LogInRegister
 
-"usernameAuth" = "Username";
-"emailAuth" = "E-Mail";
-"passwordAuth" = "Password";
-"confirmPasswordAuth" = "Confirm Password";
-"login" = "Log In";
-"register" = "Register";
-"noAccount" = "Don't have an account?";
+usernameAuth = "Username";
+emailAuth = "E-Mail";
+passwordAuth = "Password";
+confirmPasswordAuth = "Confirm Password";
+login = "Log In";
+register = "Register";
+noAccount = "Don't have an account?";
+country = "Country";
+dateOfBirth = "Date of Birth";
+
+//Profile
+
+bestScores = "Best Scores";
+
+//Profile Settings
+
+profileImage = "Profile Image";
+
+//Change Image Sheet
+
+chooseFromLibrary = "Choose from Library";
+uploadNewImageQuestion = "Upload a new profile picture?";
+
+//Play
+
+question = "Question";
+timeLeft = "Time Left";
+points = "Points";
+
+//Result
+
+gameOver = "Game Over!";
+secondsLeft = "seconds left";
+powerUpsUsed = "Power-ups used";
+playAgain = "Play Again";
 
 //User Ranks
 
@@ -39,8 +102,7 @@ Silver = "Silver";
 Gold = "Gold";
 Platinum = "Platinum";
 Diamond = "Diamond";
-Master = "Master";
-Grandmaster = "Grandmaster";
+Quizmaster = "Quizmaster";
 
 //Errors
 
@@ -54,6 +116,39 @@ unknownLoginError = "Unknown login error.";
 //General
 
 select = "Select";
+cancel = "Cancel";
+saveChanges = "Save Changes";
+all = "All";
+
+//Question
+
+easy = "Easy";
+medium = "Medium";
+hard = "Hard";
+
+general = "General Knowledge";
+geography = "Geography";
+science = "Science";
+history = "History";
+popCulture = "Pop Culture";
+sports = "Sports";
+art = "Art";
+literature = "Literature";
+music = "Music";
+cooking = "Cooking";
+film = "Film";
+videoGames = "Video Games";
+animals = "Animals";
+technology = "Technology";
+biology = "Biology";
+medicine = "Medicine";
+chemistry = "Chemistry";
+physics = "Physics";
+religion = "Religion";
+
+multipleChoice = "Multiple Choice";
+
+
 
 
 
